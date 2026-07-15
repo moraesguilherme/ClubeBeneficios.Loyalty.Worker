@@ -23,4 +23,4 @@ var builder = Host.CreateDefaultBuilder(args)
         services.AddHostedService<LoyaltyProcessingBackgroundWorker>();
     });
 
-await builder.RunConsoleAsync();
+await builder.Build().RunAsync();
